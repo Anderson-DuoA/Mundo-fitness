@@ -1,0 +1,53 @@
+/* Estilo energético para post HIIT */
+.hiit-theme {
+    background: #121212;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .hiit-banner {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .hiit-banner h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin: 0;
+  }
+  
+  .hiit-banner span {
+    color: #121212;
+  }
+  
+  .hiit-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff4b2b;
+  }
+  
+  .hiit-button {
+    background: #ff4b2b;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  /* ... outros estilos HIIT ... */

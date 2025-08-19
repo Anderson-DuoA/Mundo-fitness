@@ -1,0 +1,41 @@
+/* Estilo zen para post de yoga */
+.yoga-theme {
+    background: #f5f7fa;
+    color: #4a4a4a;
+    font-family: 'Karla', sans-serif;
+  }
+  
+  .yoga-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .yoga-header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  }
+  
+  .yoga-title h1 {
+    font-family: 'Prata', serif;
+    font-size: 3rem;
+    color: #2c3e50;
+  }
+  
+  .yoga-main-img {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 1rem auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .yoga-benefits {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  /* ... outros estilos específicos para yoga ... */

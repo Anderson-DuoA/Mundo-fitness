@@ -1,0 +1,286 @@
+/* Variáveis de cores e fontes */
+:root {
+  --primary-color: #2ecc71;
+  --secondary-color: #3498db;
+  --dark-color: #2c3e50;
+  --light-color: #ecf0f1;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --text-light: #7f8c8d;
+  --font-main: 'Roboto', sans-serif;
+  --font-headings: 'Montserrat', sans-serif;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+/* Reset e estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-family: var(--font-headings);
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Main content */
+main {
+  padding: 40px 0;
+  min-height: calc(100vh - 200px);
+}
+
+/* Posts grid */
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+article {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+article h2 {
+  font-family: var(--font-headings);
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+article h2 a {
+  color: var(--dark-color);
+}
+
+article h2 a:hover {
+  color: var(--primary-color);
+}
+
+article p {
+  color: var(--text-light);
+  margin-bottom: 15px;
+}
+
+.post-content {
+  padding: 20px;
+}
+
+/* Single post page */
+.post-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+}
+
+.post-img {
+  border-radius: 8px;
+  margin: 20px 0;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.post-meta {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.post-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--dark-color);
+}
+
+.post-container h3 {
+  font-size: 1.5rem;
+  margin: 25px 0 15px;
+  color: var(--secondary-color);
+}
+
+/* Exercises page */
+.exercise {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+}
+
+.exercise h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.exercise ul {
+  padding-left: 20px;
+}
+
+.exercise li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.exercise li::before {
+  content: "•";
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+}
+
+.tip, .note {
+  padding: 20px;
+  border-radius: 8px;
+  margin: 30px 0;
+}
+
+.tip {
+  background-color: rgba(46, 204, 113, 0.1);
+  border-left: 4px solid var(--primary-color);
+}
+
+.note {
+  background-color: rgba(231, 76, 60, 0.1);
+  border-left: 4px solid var(--accent-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-color);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Botões */
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  .post-img {
+    height: 300px;
+  }
+  
+  .post-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    gap: 10px;
+  }
+  
+  nav a {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+  
+  .post-img {
+    height: 200px;
+  }
+}
